@@ -94,3 +94,14 @@ body {
 .text-block__p {
 	line-height: 1.75;
 }
+
+@media screen and (max-width:991px) {
+	#wrapper{
+		display: none;
+	}
+}
+@media screen and (min-width:992px) {
+	#wrapper-responsive{
+		display: none;
+	}
+}
