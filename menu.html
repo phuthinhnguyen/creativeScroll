@@ -3,21 +3,24 @@
         <div class="left">
             <ul>
                 <li>
-                    <a href="index.html">Home<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                    <a id="home">Home<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                 </li>
 
                 <li>
-                    <a href="shop.html">Shop<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                    <a id="about">About<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                 </li>
 
                 <li>
-                    <a href="product.html">Product<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                    <a id="products">Products<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                    <a href="blog.html">Blog<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                    <a id="userguides">User guides<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                    <a href="">Page<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                    <a id="reviews">Reviews<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a id="contact">Contact<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
                 </li>
             </ul>
         </div>
@@ -30,3 +33,15 @@
         </div>
     </div>
 </nav>
+<script>
+    $("#about").click(function name(params) {
+        $('html').animate({
+            scrollTop: $(".about").offset().top
+        }, 600);
+    })
+    $("#contact").click(function name(params) {
+        $('html').animate({
+            scrollTop: $(".contact").offset().top
+        }, 600);
+    })
+</script>

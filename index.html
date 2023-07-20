@@ -14,6 +14,7 @@
 
 	<link rel="stylesheet" href="css/creativeScroll.css" />
 	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-3.6.4.js"></script>
 	<script src="js/creativeScroll.js" defer></script>
 	<script src="js/HTMLImporter.js"></script>
 	<link rel="stylesheet" href="parallax-scrolling/css/parallax-scrolling.css" />
@@ -27,20 +28,31 @@
 </head>
 
 <body>
-	<!-- menu -->
-	<script>HTMLImporter.import("menu.html");</script>
 
+	<!-- main -->
 	<div class="wrapper" id="wrapper">
+		<!-- menu -->
+		<script>HTMLImporter.import("menu.html");</script>
+
+		<!-- content -->
 		<div class="content">
 			<header class="hero-section">
 				<img data-speed="0.6" class="hero" src="img/logo-transparent-png.png" alt="Alt" />
 				<div class="container">
 					<div data-speed="0.75" class="main-header">
 						<h1 class="main-title">smart card</h1>
+						<button class="btn-explore">Explore now</button>
 					</div>
+					
 				</div>
 			</header>
-
+			<script>
+				$(".btn-explore").click(function name(params) {
+					$('html').animate({
+						scrollTop: $(".gallery__item").offset().top
+					}, 600);
+				})
+			</script>
 			<div class="portfolio">
 				<div class="container">
 					<main class="gallery">
@@ -77,11 +89,50 @@
 							<img class="gallery__item" src="img/work/creativeScroll-3.jpg" alt="Alt" />
 						</div>
 					</main>
+					<div class="about">
+						<h1>About Smartcard</h1>
+						<p>SMARTCARD is an intelligent card that can help you to share information related in social media personal page, phone... to everyone just by tapping.</p>
+					</div>
+					<div class="contact">
+						<h1>Connect with us</h1>
+						<div class="contactus-content">
+							<div class="contactus-content-container">	
+								<div class="contactus-content-item">
+									<h2>Contact information</h2>
+									<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.</p>
+									<p>184 Main Rd E, St Albans Victoria 3021, Australia</p>
+									<p>1800-123-222 / 1900-1570-230</p>
+									<p>contact@company.com</p>
+									<p>Everyday 9:00-17:00</p>
+								</div>
+								<div class="contactus-content-item">
+									<h2>Drop a question</h2>
+									<div class="input-name-mail">
+										<input placeholder="Your name"></input>
+										<input placeholder="Your mail"></input>
+									</div>
+									<input type="text" placeholder="Phone number">
+									<textarea name="" id="" cols="30" rows="4" placeholder="What's on your mind?"></textarea>
+									<button>Submit</button>
+								</div>
+							</div>
+						</div>
+					</div>
+			
 				</div>
 			</div>
 		</div>
+
+		
+		<!-- scrolltop -->
+		<div id="scrolltop">
+			<img src="img/totop.png" alt="">
+		</div>
+	
 	</div>
 
+
+	<!-- main-responsive -->
 	<div class="wrapper" id="wrapper-responsive">
 		<div class="content">
 			<header class="main-header-responsive">
@@ -110,6 +161,25 @@
 			</article>
 		</div>
 	</div>
+
+
+	<!-- #scroll to top -->
+	<script>
+        $("#scrolltop").click(function name(params) {
+            $("html").animate({scrollTop:0});
+        })
+        window.onscroll=function(){scrolltop()};
+        function scrolltop(){
+            if ((document.body.scrollTop>1000) || (document.documentElement.scrollTop>1000)){
+            $("#scrolltop").addClass("scrolltop-show");
+            $("nav").addClass('nav-sticky');
+            }
+            else {
+                $("#scrolltop").removeClass("scrolltop-show");
+                $("nav").removeClass('nav-sticky');
+            };
+        }
+    </script>
 </body>
 
 </html>

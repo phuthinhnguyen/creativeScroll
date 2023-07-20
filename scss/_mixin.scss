@@ -20,6 +20,13 @@
         background: $thumb-hover-color;
     }
 }
+
+@mixin title{
+    color: $text-color;
+    font-family: $fontMali;
+    font-weight: 900;
+    text-transform: uppercase;
+}
 @mixin overlayitem1{
     position: absolute;
     bottom: 1%;

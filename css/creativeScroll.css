@@ -46,7 +46,7 @@ body {
 	/* left: 47vw; */
 	left: 40vw;
 	/* top: 22vh; */
-	top: 15vh;
+	top: 5vh;
 	z-index: -1;
 }
 .main-header {
@@ -60,7 +60,7 @@ body {
 	font-size: calc(var(--index) * 8);
 	position: absolute;
 	width: min-content;
-	bottom: 12vh;
+	bottom: 35vh;
 	line-height: .9;
 }
 .gallery {
