@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "Calibri";
+  src: url("fonts/calibri/calibri-regular.ttf");
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@keyframes navsticky {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.nav-sticky {
+  animation: navsticky 0.5s;
+  transition: transform 0.4s;
+}
+
+nav {
+  font-family: "Jost";
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+}
+@keyframes navleft {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 130%;
+  }
+}
+@keyframes nav-dropdown-in {
+  0% {
+    top: 80px;
+    opacity: 0;
+  }
+  100% {
+    top: 30px;
+    opacity: 1;
+  }
+}
+nav .nav-wrap {
+  height: 70px;
+  padding: 0 20px;
+  max-width: 1680px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .nav-wrap .left ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav .nav-wrap .left li {
+  float: left;
+  margin-left: 60px;
+  position: relative;
+}
+nav .nav-wrap .left li:hover .menu-dropdown-page {
+  display: block;
+  animation: nav-dropdown-in 0.6s;
+}
+nav .nav-wrap .left li:hover .menu-dropdown {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  animation: nav-dropdown-in 0.6s;
+}
+nav .nav-wrap .left li > a {
+  position: relative;
+  font-weight: 500;
+}
+nav .nav-wrap .left li > a:hover {
+  color: black;
+}
+nav .nav-wrap .left li > a i {
+  margin-left: 5px;
+  font-size: 9px;
+  top: 30%;
+  position: absolute;
+}
+nav .nav-wrap .left li > a:hover::after {
+  height: 2px;
+  animation: navleft 0.3s;
+  background-color: black;
+  display: block;
+  width: 130%;
+  content: "";
+}
+nav .nav-wrap .left li:first-child {
+  margin-left: 0;
+}
+nav .nav-wrap .center img {
+  width: 80px;
+  height: 70px;
+  cursor: pointer;
+}
+nav .nav-wrap .right a {
+  font-family: "Jost";
+  font-weight: 500;
+}
