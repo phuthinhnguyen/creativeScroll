@@ -16,7 +16,7 @@ button {
      -moz-user-select: none;
           user-select: none;
   cursor: pointer;
-  font-family: "Roboto";
+  font-family: "Mali";
   letter-spacing: 2px;
   font-weight: 900;
   color: white;
@@ -99,59 +99,21 @@ nav .nav-wrap .left li:first-child {
   letter-spacing: 20px;
 }
 
-.about {
-  position: relative;
-  bottom: 200px;
-  margin-left: 60px;
-  margin-bottom: 100px;
-}
-.about h1 {
-  color: white;
-  font-family: "Mali";
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: auto;
-  text-align: center;
-}
-.about p {
-  margin-top: 50px;
-}
-
-.contact {
-  position: relative;
-  bottom: 200px;
-  margin-left: 60px;
-}
-.contact h1 {
-  color: white;
-  font-family: "Mali";
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: auto;
-  text-align: center;
-}
-.contact .contactus-content {
-  font-family: "Roboto";
-  margin-top: 50px;
-}
-.contact .contactus-content .contactus-content-container {
-  width: 100%;
-  display: flex;
-}
-.contact .contactus-content .contactus-content-container .contactus-content-item {
+.contactus-content-item {
   flex: 1;
 }
-.contact .contactus-content .contactus-content-container .contactus-content-item h2 {
+.contactus-content-item h2 {
   font-weight: 400;
   margin-bottom: 20px;
   font-family: "Roboto";
   letter-spacing: 4px;
   font-weight: 900;
+  font-family: "Mali";
 }
-.contact .contactus-content .contactus-content-container .contactus-content-item button {
+.contactus-content-item button {
   margin-top: 20px;
 }
-.contact .contactus-content .contactus-content-container .contactus-content-item input {
+.contactus-content-item input {
   width: 100%;
   height: 45px;
   border-radius: 5px;
@@ -160,10 +122,10 @@ nav .nav-wrap .left li:first-child {
   font-family: "Roboto";
   outline: none;
 }
-.contact .contactus-content .contactus-content-container .contactus-content-item input:focus {
+.contactus-content-item input:focus {
   border: 3px solid black;
 }
-.contact .contactus-content .contactus-content-container .contactus-content-item textarea {
+.contactus-content-item textarea {
   margin-top: 20px;
   width: 100%;
   padding: 20px;
@@ -173,26 +135,73 @@ nav .nav-wrap .left li:first-child {
   font-family: "Roboto";
   outline: none;
 }
-.contact .contactus-content .contactus-content-container .contactus-content-item textarea:focus {
+.contactus-content-item textarea:focus {
   border: 3px solid black;
 }
-.contact .contactus-content .contactus-content-container .contactus-content-item .input-name-mail {
+.contactus-content-item .input-name-mail {
   display: flex;
   justify-content: space-between;
 }
-.contact .contactus-content .contactus-content-container .contactus-content-item .input-name-mail input {
+.contactus-content-item .input-name-mail input {
   width: 48%;
 }
-.contact .contactus-content .contactus-content-container .contactus-content-item > input {
+.contactus-content-item > input {
   margin-top: 20px;
 }
-.contact .contactus-content .contactus-content-container .contactus-content-item:last-of-type {
+.contactus-content-item:last-of-type {
   padding: 0 30px;
 }
-.contact .contactus-content .contactus-content-container .contactus-content-item:last-of-type p {
-  color: gray;
+.contactus-content-item:last-of-type p {
+  color: var(--text);
   font-size: 16px;
   line-height: 26px;
+}
+
+.title-header {
+  margin-bottom: 0;
+  text-align: center;
+  padding-top: 150px;
+  font-size: 30px;
+  font-family: "Mali";
+}
+
+.content-wrap {
+  padding: 0;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.content-wrap .content-left {
+  margin-top: 50px;
+}
+.content-wrap .content-left .content-left-item {
+  margin-bottom: 0;
+}
+.content-wrap .content-left .content-left-item p {
+  font-family: "Calibri";
+  font-size: 20px;
+  line-height: 1.75;
+}
+.content-wrap .content-right {
+  margin: 0;
+  padding: 0;
+}
+.content-wrap .content-right .content-right-item {
+  margin-bottom: 0;
+  margin-top: 40px;
+}
+.content-wrap .content-right .content-right-item p {
+  font-family: "Calibri";
+  font-size: 20px;
+  line-height: 1.75;
+}
+
+.footer {
+  margin-top: 100px;
+  max-height: 400px;
+}
+.footer img {
+  width: 100%;
+  height: auto;
 }
 
 #scrolltop img {

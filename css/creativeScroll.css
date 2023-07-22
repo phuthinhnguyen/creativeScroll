@@ -9,7 +9,7 @@
 	--color-text: #cdc6c3;
 	--gallery-gap: calc(var(--index) * 7.5)
 }
-@font-face {
+/* @font-face {
 	font-family: raleway-c;
 	src: url(../fonts/raleway-regular.woff2);
 }
@@ -24,7 +24,7 @@
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: outfit-c;
-}
+} */
 /* will-change */
 .content, .hero, .main-header, .gallery > * {
 	will-change: transform;
@@ -33,7 +33,7 @@ body {
 	background-image: url(../img/bg-01.jpg);
 	background-size: 50px;
 	color: #fafafa;
-	font-family: raleway-c;
+	/* font-family: calibri; */
 	overflow-x: hidden;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -79,8 +79,10 @@ body {
 	max-height: 180vh;
 	border-radius: 8px;
 }
+
 .gallery__left {
-	margin-top: calc(var(--gallery-gap) * 1.75);
+	/* margin-top: calc(var(--gallery-gap) * 1.75); */
+	margin-top: calc(var(--gallery-gap) * 1.50);
 }
 .gallery__right .gallery__item {
 	margin: 0;
@@ -99,6 +101,8 @@ body {
 }
 .text-block__p {
 	line-height: 1.75;
+	font-size: 20px;
+	font-family: "Calibri";
 }
 
 @media screen and (max-width:991px) {
