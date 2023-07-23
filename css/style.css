@@ -2,6 +2,24 @@
   font-family: "Calibri";
   src: url("fonts/calibri/calibri-regular.ttf");
 }
+@font-face {
+  font-family: "AdamGorry";
+  src: url(../fonts/SVN-Adam-Gorry.ttf);
+}
+html ::-webkit-scrollbar {
+  width: 8px;
+}
+html ::-webkit-scrollbar-track {
+  background: lightgray;
+}
+html ::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 5px;
+}
+html ::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
 a {
   text-decoration: none;
   color: var(--text);
@@ -16,7 +34,7 @@ button {
      -moz-user-select: none;
           user-select: none;
   cursor: pointer;
-  font-family: "Mali";
+  font-family: "AdamGorry";
   letter-spacing: 2px;
   font-weight: 900;
   color: white;
@@ -61,8 +79,7 @@ nav .nav-wrap {
   font-size: calc(var(--index) * 0.75);
   font-weight: 900;
   color: var(--text);
-  text-shadow: 0 0 15px #9d822b;
-  font-family: "Mali";
+  font-family: "AdamGorry";
 }
 nav .nav-wrap .left ul {
   list-style-type: none;
@@ -86,6 +103,10 @@ nav .nav-wrap .left li > a:hover {
 nav .nav-wrap .left li:first-child {
   margin-left: 0;
 }
+nav .nav-wrap .right a:hover {
+  color: white;
+}
+
 .btn-explore {
   position: absolute;
   bottom: 25vh;
@@ -103,12 +124,13 @@ nav .nav-wrap .left li:first-child {
   flex: 1;
 }
 .contactus-content-item h2 {
-  font-weight: 400;
+  font-family: "AdamGorry";
+  font-size: 30px;
+  line-height: 1.75;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 22px;
   margin-bottom: 20px;
-  font-family: "Roboto";
-  letter-spacing: 4px;
-  font-weight: 900;
-  font-family: "Mali";
 }
 .contactus-content-item button {
   margin-top: 20px;
@@ -119,7 +141,7 @@ nav .nav-wrap .left li:first-child {
   border-radius: 5px;
   border: 1px solid lightgray;
   padding-left: 20px;
-  font-family: "Roboto";
+  font-family: "Mali";
   outline: none;
 }
 .contactus-content-item input:focus {
@@ -132,7 +154,7 @@ nav .nav-wrap .left li:first-child {
   resize: none;
   border-radius: 5px;
   border: 1px solid lightgray;
-  font-family: "Roboto";
+  font-family: "Mali";
   outline: none;
 }
 .contactus-content-item textarea:focus {
@@ -161,8 +183,11 @@ nav .nav-wrap .left li:first-child {
   margin-bottom: 0;
   text-align: center;
   padding-top: 150px;
+  font-family: "AdamGorry";
   font-size: 30px;
-  font-family: "Mali";
+  line-height: 1.75;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .content-wrap {
@@ -177,9 +202,11 @@ nav .nav-wrap .left li:first-child {
   margin-bottom: 0;
 }
 .content-wrap .content-left .content-left-item p {
-  font-family: "Calibri";
-  font-size: 20px;
   line-height: 1.75;
+  font-size: 20px;
+  font-family: "Mali";
+  font-weight: 400;
+  color: "rgb(228, 227, 227)";
 }
 .content-wrap .content-right {
   margin: 0;
@@ -190,9 +217,11 @@ nav .nav-wrap .left li:first-child {
   margin-top: 40px;
 }
 .content-wrap .content-right .content-right-item p {
-  font-family: "Calibri";
-  font-size: 20px;
   line-height: 1.75;
+  font-size: 20px;
+  font-family: "Mali";
+  font-weight: 400;
+  color: "rgb(228, 227, 227)";
 }
 
 .footer {

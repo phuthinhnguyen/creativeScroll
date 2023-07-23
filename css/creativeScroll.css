@@ -9,23 +9,7 @@
 	--color-text: #cdc6c3;
 	--gallery-gap: calc(var(--index) * 7.5)
 }
-/* @font-face {
-	font-family: raleway-c;
-	src: url(../fonts/raleway-regular.woff2);
-}
-@font-face {
-	font-family: outfit-c;
-	src: url(../fonts/outfit-regular.woff2);
-}
-@font-face {
-	font-family: calibri;
-	src: url(../fonts/calibri/calibri-regular.ttf);
-	font-weight: 900;
-}
-h1, h2, h3, h4, h5, h6 {
-	font-family: outfit-c;
-} */
-/* will-change */
+
 .content, .hero, .main-header, .gallery > * {
 	will-change: transform;
 }
@@ -33,7 +17,6 @@ body {
 	background-image: url(../img/bg-01.jpg);
 	background-size: 50px;
 	color: #fafafa;
-	/* font-family: calibri; */
 	overflow-x: hidden;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -93,16 +76,19 @@ body {
 	position: relative;
 }
 .text-block__h {
-	font-size: 2rem;
-	line-height: 2.4rem;
 	color: var(--color-header);
 	margin-bottom: 1.5rem;
-	font-family: Mali;
+	font-family: "AdamGorry";
+	font-size: 25px;
+	line-height: 1.75;
+	font-weight: 600;
+	letter-spacing: 1px;
 }
 .text-block__p {
 	line-height: 1.75;
 	font-size: 20px;
-	font-family: "Calibri";
+	font-family: "Mali";
+	font-weight: 400;
 }
 
 @media screen and (max-width:991px) {
