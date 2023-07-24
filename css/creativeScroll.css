@@ -5,12 +5,12 @@
 }
 :root {
 	--index: calc(1vw + 1vh);
-	--color-header: #f4efec;
-	--color-text: #cdc6c3;
+	/* --color-header: #f4efec;
+	--color-text: #cdc6c3; */
 	--gallery-gap: calc(var(--index) * 7.5)
 }
 
-.content, .hero, .main-header, .gallery > * {
+.container-content, .hero, .main-header, .gallery > * {
 	will-change: transform;
 }
 body {
@@ -35,7 +35,7 @@ body {
 .main-header {
 	height: 100vh;
 }
-.container {
+.container-content {
 	/* padding: 0 7vw; */
 	padding: 0 5vw;
 }
@@ -72,11 +72,11 @@ body {
 	margin-top: var(--gallery-gap);
 }
 .text-block {
-	color: var(--color-text);
+	/* color: var(--color-text); */
 	position: relative;
 }
 .text-block__h {
-	color: var(--color-header);
+	/* color: var(--color-header); */
 	margin-bottom: 1.5rem;
 	font-family: "AdamGorry";
 	font-size: 25px;
@@ -91,13 +91,4 @@ body {
 	font-weight: 400;
 }
 
-@media screen and (max-width:991px) {
-	#wrapper{
-		display: none;
-	}
-}
-@media screen and (min-width:992px) {
-	#wrapper-responsive{
-		display: none;
-	}
-}
+

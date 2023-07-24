@@ -30,10 +30,17 @@
         </div> -->
         <div class="right">
            <a href="">Log in</a>
+           <img src="./img/vi.svg" alt="" style="width: 25px;height: 25px;margin-left: 20px;" onclick="vi()">
+           <img src="./img/us.svg" alt="" onclick="eng()">
         </div>
     </div>
 </nav>
 <script>
+    $("#home").click(function name(params) {
+        $('html').animate({
+            scrollTop: $(".home").offset().top
+        }, 600);
+    })
     $("#about").click(function name(params) {
         $('html').animate({
             scrollTop: $(".about").offset().top

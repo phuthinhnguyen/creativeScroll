@@ -17,6 +17,10 @@
 	<script src="js/jquery-3.6.4.js"></script>
 	<script src="js/creativeScroll.js" defer></script>
 	<script src="js/HTMLImporter.js"></script>
+	<script src="js/language.js"></script>
+	<link rel="stylesheet" href="css/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <script src="css/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+
 	<link rel="stylesheet" href="parallax-scrolling/css/parallax-scrolling.css" />
 	<link rel="stylesheet" href="css/parallax.css">
 	<script src="parallax-scrolling/libs/gsap/gsap.min.js" defer></script>
@@ -36,25 +40,25 @@
 
 		<!-- content -->
 		<div class="content">
-			<header class="hero-section">
+			<header class="hero-section home">
 				<img data-speed="0.6" class="hero" src="img/logo-transparent-png.png" alt="Alt" />
-				<div class="container">
+				<div class="container-content">
 					<div data-speed="0.75" class="main-header">
 						<h1 class="main-title">smart card</h1>
-						<button class="btn-explore">Explore now</button>
+						<button class="button-explore">Explore now</button>
 					</div>
 					
 				</div>
 			</header>
 			<script>
-				$(".btn-explore").click(function name(params) {
+				$(".button-explore").click(function name(params) {
 					$('html').animate({
 						scrollTop: $(".gallery__item").offset().top
 					}, 600);
 				})
 			</script>
 			<div class="portfolio">
-				<div class="container">
+				<div class="container-content">
 					<main class="gallery">
 						<div data-speed="0.9" class="gallery__left">
 							<img class="gallery__item" src="img/work/creativeScroll-1.jpg" alt="Alt" />
@@ -93,17 +97,28 @@
 			<!-- about -->
 			<h2 class="title-header about">VỀ SMARTCARD</h2>
 			<div class="portfolio">
-				<div class="container">
+				<div class="container-content">
 					<main class="gallery content-wrap">
-						<div data-speed="1" class="gallery__left content-left">
+						<div data-speed="1.05" class="gallery__left content-left" style="max-height: 250px;">
 							<div class="contactus-content-item gallery__item content-left-item">
-								<p>Thẻ thông minh, thẻ gắn chip, hay thẻ tích hợp vi mạch (tiếng Anh: integrated circuit card, viết tắt ICC) là loại thẻ bỏ túi thường có kích thước của thẻ tín dụng, bên trong chứa một mạch tích hợp có khả năng lưu trữ và xử lý thông tin. <br><br>Nó có thể đóng vai trò như thẻ căn cước, thực hiện việc xác thực thông tin, lưu trữ dữ liệu hay dùng trong các ứng dụng thẻ. Có hai loại thẻ thông minh chính. Các thẻ nhớ (memory card) chỉ chứa các thành phần bộ nhớ bất biến (non-volatile memory), và có thể có một số chức năng bảo mật cụ thể. Thẻ vi xử lý chứa bộ nhớ khả biến (volatile memory) và các thành phần vi xử lý. Thẻ làm bằng nhựa, thường là PVC, đôi khi ABS. Thẻ có thể chứa một ảnh 3 chiều (hologram) để tránh các vụ lừa đảo.</p>
+								<p>SMARTCARD là loại thẻ thông minh bên trong có tích hợp chip NFC - một loại chip hỗ trợ cho các thiết bị giao tiếp gần, có khả năng lưu trữ và xử lý thông tin.</p>
 							</div>
-							
+							<div class="contactus-content-item gallery__item content-left-item">
+								<img src="img/about-2.jpg" alt="">
+							</div>
+							<div class="contactus-content-item gallery__item content-left-item">
+								<p>Vói kích thước nhỏ gọn gần bằng chiếc thẻ tín dụng, bạn có thể mang theo và sử dụng SMARTCARD ở bất kỳ đâu.</p>
+							</div>
 						</div>
-						<div data-speed="1" class="gallery__right content-right">
+						<div data-speed="1.1" class="gallery__right content-right">
 							<div class="contactus-content-item gallery__item content-right-item">
-								<p>SMARTCARD is an intelligent card that can help you to share information related in social media personal page, phone... to everyone just by tapping.</p>
+								<img src="img/about-1.jpg" alt="">
+							</div>
+							<div class="contactus-content-item gallery__item content-right-item">
+								<p>SMARTCARD đóng vai trò truyền thông tin/dữ liệu trong thẻ tới thiết bị nhận chỉ bằng một thao tác giao tiếp gần. Từ đó, người sở hữu thẻ có thể dễ dàng chia sẻ thông tin của mình cho người nhận.</p>
+							</div>
+							<div class="contactus-content-item gallery__item content-right-item">
+								<img src="img/about-3.jpg" alt="" style="margin-bottom: 0;">
 							</div>
 						</div>
 					</main>
@@ -114,7 +129,7 @@
 			<!-- products -->
 			<h2 class="title-header products">SẢN PHẨM</h2>
 			<div class="portfolio">
-				<div class="container">
+				<div class="container-content">
 					<main class="gallery content-wrap">
 						<div data-speed="1" class="gallery__left content-left">
 							<div class="contactus-content-item gallery__item content-left-item">
@@ -135,7 +150,7 @@
 			<!-- userguides -->
 			<h2 class="title-header userguides">USERGUIDES</h2>
 			<div class="portfolio">
-				<div class="container">
+				<div class="container-content">
 					<main class="gallery content-wrap">
 						<div data-speed="1" class="gallery__left content-left">
 							<div class="contactus-content-item gallery__item content-left-item">
@@ -156,9 +171,9 @@
 			<!-- reviews -->
 			<h2 class="title-header reviews">REVIEWS</h2>
 			<div class="portfolio">
-				<div class="container">
-					<main class="gallery content-wrap">
-						<div data-speed="1" class="gallery__left content-left">
+				<div class="container-content">
+					<main class="content-wrap-reviews">
+						<!-- <div data-speed="1" class="gallery__left content-left">
 							<div class="contactus-content-item gallery__item content-left-item">
 								<p>SMARTCARD is an intelligent card that can help you to share information related in social media personal page, phone... to everyone just by tapping.</p>
 							</div>
@@ -168,25 +183,108 @@
 							<div class="contactus-content-item gallery__item content-right-item">
 								<p>SMARTCARD is an intelligent card that can help you to share information related in social media personal page, phone... to everyone just by tapping.</p>
 							</div>
+						</div> -->
+						<div data-speed="1" class="gallery__left">
+							<div class="gallery__item gallery__item-reviews">
+								<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+									<div class="carousel-inner">
+									  <div class="carousel-item active">
+										<div class="carousel-item-wrap">
+											<div class="item">
+												<div>
+													<img src="img/reviews-4.png" alt="">
+							
+												</div>
+												<p>Great to deal with in setting up my business license along with ongoing business questions and accounting. Highly recommend them to anyone looking to operate a business in Vietnam.</p>
+												<h6>Aaron Moore</h6>
+												<p>Founder of AGile Farms</p>
+											</div>
+											<div class="item">
+												<div>
+													<img src="img/reviews-5.png" alt="">
+													
+												</div>
+												<p>Everything from H.S is OK.
+													<br>See you again.
+												</p>
+												<h6>Chioma Okeke</h6>
+												<p>Customer form Graz</p>
+											</div>
+											<div class="item" id="reviews-res">
+												<div>
+													<img src="img/reviews-6.png" alt="">
+													
+												</div>
+												<p>Good service.
+													<br>Hope to see you again.</p>
+												<h6>Minh Quan Nguyen</h6>
+												<p>Senior Software Engineer in Inspire Ventures</p>
+											</div>
+										</div>
+									  </div>
+									  <div class="carousel-item">
+										<div class="carousel-item-wrap">
+											<div class="item">
+												<div>
+													<img src="img/reviews-1.svg" alt="">
+											
+												</div>
+												<p>Enthusiastic advice, low cost, diverse services. H.S is the best choice for who want to start business.</p>
+												<h6>Peony Osh</h6>
+												<p>Customer from Singapore</p>
+											</div>
+											<div class="item">
+												<div>
+													<img src="img/reviews-2.svg" alt="">
+												
+												</div>
+												<p>Reliable and efficient service from "H.S". Do not hesitate to entrust them with the establishment of your company or further support of your business in Vietnam.</p>
+												<h6>Lucy Brod</h6>
+												<p>Customer</p>
+											</div>
+											<div class="item" id="reviews-res">
+												<div>
+													<img src="img/reviews-3.png" alt="">
+											
+												</div>
+												<p>Working with H.S was a pleasure. Not only did they complete the job as promised within the exact time, but they also went above and beyond to make sure that my needs were met even after the contract was fulfilled.</p>
+												<h6>Nicholas Trampe</h6>
+												<p>Customer</p>
+											</div>
+										</div>
+									  </div>
+									</div>
+									<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+									  <span class="carousel-control-prev-icon" aria-hidden="true"><img style="width: 50px;" src="img/arrowleft.svg" alt=""></span>
+									  <span class="visually-hidden">Previous</span>
+									</button>
+									<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+										<span class="carousel-control-next-icon" aria-hidden="true"><img style="width: 50px;" src="img/arrowright.svg" alt=""></span>
+									  <span class="visually-hidden">Next</span>
+									</button>
+								  </div>
+							</div>
 						</div>
 					</main>
 				</div>
 			</div>
-	
+		
 
 			<!-- contact -->
 			<h2 class="title-header contact">CONTACT</h2>
 			<div class="portfolio">
-				<div class="container">
+				<div class="container-content">
 					<main class="gallery content-wrap">
 						<div data-speed="1" class="gallery__left content-left">
 							<div class="contactus-content-item gallery__item content-left-item">
 								<h2>Contact information</h2>
-								<p>We love to hear from you on our customer service, merchandise, website or any topics you want to share with us. Your comments and suggestions will be appreciated. Please complete the form below.</p>
-								<p>184 Main Rd E, St Albans Victoria 3021, Australia</p>
-								<p>1800-123-222 / 1900-1570-230</p>
-								<p>contact@company.com</p>
-								<p>Everyday 9:00-17:00</p>
+								<p>We love to hear from you on our customer service, merchandise, website or any topics you want
+									to share
+									with us. Your comments and suggestions will be appreciated. Please refer to the information below:</p>
+								<p>smartcard.com</p>
+								<p>Mobile/Zalo: 0937 43 93 40</p>
+								<p>contact@smartcard.com</p>
+								<p>Everyday 8:00-19:00</p>
 							</div>
 						</div>
 
