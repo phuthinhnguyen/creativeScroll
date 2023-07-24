@@ -16,7 +16,8 @@
 
 @mixin title{
     font-family: $fontAdamGorry;
-    font-size: 30px;
+    // font-size: 30px;
+    font-size: calc(var(--index) * 1.2);
 	line-height: 1.75;
 	font-weight: 600;
 	letter-spacing: 2px;
@@ -25,7 +26,8 @@
 
 @mixin text{
     line-height: 1.75;
-    font-size: 20px;
+    // font-size: 20px;
+    font-size: calc(var(--index) * 0.75);
     font-family: $fontMali;
     font-weight: 400;
     color: $text-color;

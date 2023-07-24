@@ -188,6 +188,23 @@ nav{
     }
 }
 
+// CSS userguides
+.content-userguides{
+    .contactus-content-item{
+        width: 100%;
+        p{
+            span{
+                font-weight: 600;
+                text-align: left;
+                color: $title-color;
+                text-decoration: underline;
+            }
+        }
+    }
+    // .content-right-item{
+    //     margin-top: 0;
+    // }
+}
 
 
 // CSS reviews
@@ -243,6 +260,7 @@ nav{
                         font-family: $fontMali;
                         color: $text-color;
                         margin-top: 20px;
+                        font-size: calc(var(--index) * 0.6);
                     }
                     // a{
                     //     width: 9px;
@@ -267,9 +285,16 @@ nav{
 .contactus-content-item{
     flex: 1;
     h2{
-       @include title;
-       font-size: 22px;
-       margin-bottom: 20px;
+        @include title;
+        font-size: calc(var(--index) * 0.8);
+        margin-bottom: 20px;
+    }
+    p{
+        // color: var(--text);
+        // font-size: 216px;
+        font-size: calc(var(--index) * 0.7);
+        line-height: 6px;
+        margin-bottom: 10px;
     }
     button{
         margin-top: 20px;
@@ -296,6 +321,7 @@ nav{
         border: 1px solid lightgray;
         font-family: $fontMali;
         outline: none;
+        font-size: calc(var(--index) * 0.7);
         &:focus{
             border: 3px solid black;
         }
@@ -305,20 +331,17 @@ nav{
         justify-content: space-between;
         input{
             width: 48%;
+            font-size: calc(var(--index) * 0.7);
         }
     }
     >input{
         margin-top: 20px;
+        font-size: calc(var(--index) * 0.7);
     }
-    &:last-of-type{
-        padding: 0 30px;
-        p{
-            // color: var(--text);
-            font-size: 16px;
-            line-height: 6px;
-            margin-bottom: 10px;
-        }
-    }
+    // &:last-of-type{
+    //     padding: 0 30px;
+       
+    // }
 }
 
 

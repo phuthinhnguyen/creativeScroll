@@ -132,7 +132,7 @@ nav .nav-wrap .right img {
   text-align: center;
   padding-top: 150px;
   font-family: "AdamGorry";
-  font-size: 30px;
+  font-size: calc(var(--index) * 1.2);
   line-height: 1.75;
   font-weight: 600;
   letter-spacing: 2px;
@@ -152,7 +152,7 @@ nav .nav-wrap .right img {
 }
 .content-wrap .content-left .content-left-item p {
   line-height: 1.75;
-  font-size: 20px;
+  font-size: calc(var(--index) * 0.75);
   font-family: "Mali";
   font-weight: 400;
   color: rgb(228, 227, 227);
@@ -167,7 +167,7 @@ nav .nav-wrap .right img {
 }
 .content-wrap .content-right .content-right-item p {
   line-height: 1.75;
-  font-size: 20px;
+  font-size: calc(var(--index) * 0.75);
   font-family: "Mali";
   font-weight: 400;
   color: rgb(228, 227, 227);
@@ -189,6 +189,16 @@ nav .nav-wrap .right img {
   height: auto;
   margin-bottom: 50px;
   border-radius: 8px;
+}
+
+.content-userguides .contactus-content-item {
+  width: 100%;
+}
+.content-userguides .contactus-content-item p span {
+  font-weight: 600;
+  text-align: left;
+  color: rgb(231, 229, 229);
+  text-decoration: underline;
 }
 
 .content-wrap-reviews .gallery__left {
@@ -232,6 +242,7 @@ nav .nav-wrap .right img {
   font-family: "Mali";
   color: rgb(228, 227, 227);
   margin-top: 20px;
+  font-size: calc(var(--index) * 0.6);
 }
 .content-wrap-reviews .gallery__left .gallery__item-reviews .carousel-item-wrap .item h6 {
   font-family: "AdamGorry";
@@ -245,13 +256,18 @@ nav .nav-wrap .right img {
 }
 .contactus-content-item h2 {
   font-family: "AdamGorry";
-  font-size: 30px;
+  font-size: calc(var(--index) * 1.2);
   line-height: 1.75;
   font-weight: 600;
   letter-spacing: 2px;
   color: rgb(231, 229, 229);
-  font-size: 22px;
+  font-size: calc(var(--index) * 0.8);
   margin-bottom: 20px;
+}
+.contactus-content-item p {
+  font-size: calc(var(--index) * 0.7);
+  line-height: 6px;
+  margin-bottom: 10px;
 }
 .contactus-content-item button {
   margin-top: 20px;
@@ -294,6 +310,7 @@ nav .nav-wrap .right img {
   border: 1px solid lightgray;
   font-family: "Mali";
   outline: none;
+  font-size: calc(var(--index) * 0.7);
 }
 .contactus-content-item textarea:focus {
   border: 3px solid black;
@@ -304,17 +321,11 @@ nav .nav-wrap .right img {
 }
 .contactus-content-item .input-name-mail input {
   width: 48%;
+  font-size: calc(var(--index) * 0.7);
 }
 .contactus-content-item > input {
   margin-top: 20px;
-}
-.contactus-content-item:last-of-type {
-  padding: 0 30px;
-}
-.contactus-content-item:last-of-type p {
-  font-size: 16px;
-  line-height: 6px;
-  margin-bottom: 10px;
+  font-size: calc(var(--index) * 0.7);
 }
 
 .footer {

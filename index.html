@@ -99,11 +99,11 @@
 			<div class="portfolio">
 				<div class="container-content">
 					<main class="gallery content-wrap">
-						<div data-speed="1.05" class="gallery__left content-left" style="max-height: 250px;">
-							<div class="contactus-content-item gallery__item content-left-item">
+						<div data-speed="1.05" class="gallery__left content-left">
+							<div class="contactus-content-item gallery__item content-left-item" style="max-height: 200px;">
 								<p>SMARTCARD là loại thẻ thông minh bên trong có tích hợp chip NFC - một loại chip hỗ trợ cho các thiết bị giao tiếp gần, có khả năng lưu trữ và xử lý thông tin.</p>
 							</div>
-							<div class="contactus-content-item gallery__item content-left-item">
+							<div class="contactus-content-item gallery__item content-left-item" style="margin-bottom: 30px;">
 								<img src="img/about-2.jpg" alt="">
 							</div>
 							<div class="contactus-content-item gallery__item content-left-item">
@@ -114,7 +114,7 @@
 							<div class="contactus-content-item gallery__item content-right-item">
 								<img src="img/about-1.jpg" alt="">
 							</div>
-							<div class="contactus-content-item gallery__item content-right-item">
+							<div class="contactus-content-item gallery__item content-right-item" style="margin-bottom: 30px;">
 								<p>SMARTCARD đóng vai trò truyền thông tin/dữ liệu trong thẻ tới thiết bị nhận chỉ bằng một thao tác giao tiếp gần. Từ đó, người sở hữu thẻ có thể dễ dàng chia sẻ thông tin của mình cho người nhận.</p>
 							</div>
 							<div class="contactus-content-item gallery__item content-right-item">
@@ -152,15 +152,23 @@
 			<div class="portfolio">
 				<div class="container-content">
 					<main class="gallery content-wrap">
-						<div data-speed="1" class="gallery__left content-left">
+						<div data-speed="1" class="gallery__left content-left content-userguides">
 							<div class="contactus-content-item gallery__item content-left-item">
-								<p>SMARTCARD is an intelligent card that can help you to share information related in social media personal page, phone... to everyone just by tapping.</p>
+								<p><span>Bước 1:</span> Đặt thẻ gần vùng đọc NFC trên điện thoại hoặc thiết bị hỗ trợ NFC của bạn. Thiết bị của bạn sẽ tự động xác nhận và chuyển hướng đến trang đăng ký.(*)</p>
 							</div>
-							
+							<div class="contactus-content-item gallery__item content-left-item">
+								<p><span>Bước 2:</span> Đăng ký tài khoản. Sau khi đăng ký thành công, bạn sẽ được chuyển hướng đến trang đăng nhập.</p>
+							</div>
+							<div class="contactus-content-item gallery__item content-left-item">
+								<p><span>Bước 3:</span> Đăng nhập.</p>
+							</div>
 						</div>
-						<div data-speed="1" class="gallery__right content-right">
+						<div data-speed="1" class="gallery__right content-right content-userguides">
 							<div class="contactus-content-item gallery__item content-right-item">
-								<p>SMARTCARD is an intelligent card that can help you to share information related in social media personal page, phone... to everyone just by tapping.</p>
+								<p><span>Bước 4:</span> Đăng nhập thành công vào trang User Control, bạn có thể thiết lập các thông tin của thẻ.</p>
+							</div>
+							<div class="contactus-content-item gallery__item content-right-item">
+								<p><span>Bước 5:</span> Hoàn tất kích hoạt thẻ thành công.</p>
 							</div>
 						</div>
 					</main>
@@ -366,6 +374,12 @@
                 $("nav").removeClass('nav-sticky');
             };
         }
+		// $("p").each( function () {
+		// 	var $this = $(this);
+		// 	if (parseInt($this.css("fontSize")) < 20) {
+		// 		$this.css({ "font-size": "20px" });   
+		// 	}
+		// });
     </script>
 </body>
 
