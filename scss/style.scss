@@ -117,7 +117,46 @@ nav{
     }
 }
 
-// CSS content
+
+// CSS content-item: about, products, userguides, reviews, contact
+.title-header{
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 150px;
+    @include title;
+}
+.container-content{
+    padding-top: 0;
+    .content-wrap{
+        padding: 0;
+        margin-top: 50px;
+        margin-bottom: 0;
+        .content-left{
+            margin-top: 50px;
+            .content-left-item{
+                margin-bottom: 0;
+                p{
+                    @include text;
+                }
+            }
+        }
+        .content-right{
+            margin: 0;
+            padding: 0;
+            .content-right-item{
+                margin-bottom: 0;
+                margin-top: 40px;
+                p{
+                    @include text;
+                }
+            }
+        }
+    }
+}
+
+
+
+// CSS home
 .button-explore{
     position: absolute;
 	bottom: 25vh;
@@ -130,43 +169,14 @@ nav{
         letter-spacing: 20px;
     }
 }
-
-// CSS content-item: about, products, userguides, reviews, contact
-.title-header{
-    margin-bottom: 0;
-    text-align: center;
-    padding-top: 150px;
-    @include title;
+.home-image{
+	width: calc(var(--index) * 42);
+	position: absolute;
+	left: -15vw;
+	top: 5vh;
+	z-index: -1;
+    transform: rotate(-40deg);
 }
-
-.content-wrap{
-    padding: 0;
-    margin-top: 50px;
-    margin-bottom: 0;
-    .content-left{
-        margin-top: 50px;
-        .content-left-item{
-            margin-bottom: 0;
-            p{
-                @include text;
-            }
-        }
-    }
-    .content-right{
-        margin: 0;
-        padding: 0;
-        .content-right-item{
-            margin-bottom: 0;
-            margin-top: 40px;
-            p{
-                @include text;
-            }
-        }
-    }
-}
-
-
-// CSS home
 .text-block__h{
     color: $title-color;
 }
