@@ -109,38 +109,106 @@ nav .nav-wrap .right img {
   color: rgb(231, 229, 229);
 }
 
-.content-wrap {
+.container-content {
+  padding-top: 0;
+}
+.container-content .content-wrap {
   padding: 0;
   margin-top: 50px;
   margin-bottom: 0;
 }
-.content-wrap .content-left {
+.container-content .content-wrap .content-left {
   margin-top: 50px;
 }
-.content-wrap .content-left .content-left-item {
+.container-content .content-wrap .content-left .content-left-item {
   margin-bottom: 0;
 }
-.content-wrap .content-left .content-left-item p {
+.container-content .content-wrap .content-left .content-left-item p {
   line-height: 1.75;
   font-size: calc(var(--index) * 0.75);
   font-family: "Mali";
   font-weight: 400;
   color: rgb(228, 227, 227);
 }
-.content-wrap .content-right {
+.container-content .content-wrap .content-right {
   margin: 0;
   padding: 0;
 }
-.content-wrap .content-right .content-right-item {
+.container-content .content-wrap .content-right .content-right-item {
   margin-bottom: 0;
   margin-top: 40px;
 }
-.content-wrap .content-right .content-right-item p {
+.container-content .content-wrap .content-right .content-right-item p {
   line-height: 1.75;
   font-size: calc(var(--index) * 0.75);
   font-family: "Mali";
   font-weight: 400;
   color: rgb(228, 227, 227);
+}
+.container-content .main-header .portfolio-item {
+  position: absolute;
+  text-align: center;
+}
+.container-content .main-header .portfolio-item1 {
+  bottom: 45vh;
+  transform: rotate(-20deg);
+  z-index: 1;
+}
+.container-content .main-header .portfolio-item2 {
+  bottom: 40vh;
+  left: 10vh;
+}
+.container-content .main-header .portfolio-item3 {
+  bottom: 35vh;
+  left: 15vh;
+}
+.container-content .main-header .foto img {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+.container-content .main-header .foto div {
+  background: #ffffff;
+  display: inline-block;
+  margin: 0 auto 5% auto;
+  padding: 10px 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s linear;
+  z-index: 0;
+  position: relative;
+}
+.container-content .main-header .foto div:after {
+  color: #333;
+  font-size: 25px;
+  content: attr(title);
+  position: relative;
+  top: 15px;
+}
+.container-content .main-header .foto div:hover {
+  transform: scale(1.01);
+  z-index: 10;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+.container-content .main-header .project-title-settings {
+  margin-top: 5%;
+  font: 18px/24px "opensans-bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: black;
+  text-align: center;
+}
+.container-content .main-header .project-date {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 8px 15px 2px 15px;
+  position: relative;
+  z-index: -500;
+  border-top: 5px solid #696969;
+  border-radius: 0 0 5px 5px;
+  background-color: #696969;
+  color: white;
 }
 
 .button-explore {
@@ -198,6 +266,137 @@ nav .nav-wrap .right img {
   height: auto;
   margin-bottom: 50px;
   border-radius: 8px;
+}
+
+.filters-container {
+  margin: auto;
+  margin-top: 40px;
+  padding: 0 50px;
+}
+.filters-container .filters-wrap {
+  list-style-type: none;
+  position: relative;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(228, 227, 227);
+  font-family: "Mali";
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px 0px rgba(153, 153, 153, 0.2);
+  display: table;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.filters-container .filters-wrap .active {
+  color: black;
+  background: white;
+}
+.filters-container .filters-wrap li {
+  font-family: "Mali";
+  color: rgb(228, 227, 227);
+  display: table-cell;
+  padding: 40px 0px;
+  max-width: 184px;
+  cursor: pointer;
+  position: relative;
+  font-size: 12px;
+  font-weight: 500;
+}
+.filters-container .filters-content {
+  text-align: left;
+  color: #777;
+  font-family: "Poppins", sans-serif;
+  margin-top: 50px;
+}
+.filters-container .filters-content .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  position: relative;
+  height: 600px;
+}
+.filters-container .filters-content .row .all {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.filters-container .filters-content .row .all .single-menu {
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 20px;
+}
+.filters-container .filters-content .row .all .single-menu .portfolio-item {
+  text-align: center;
+}
+.filters-container .filters-content .row .all .single-menu .portfolio-item1 {
+  bottom: 45vh;
+  transform: rotate(-20deg);
+  z-index: 1;
+}
+.filters-container .filters-content .row .all .single-menu .portfolio-item2 {
+  bottom: 40vh;
+  left: 10vh;
+}
+.filters-container .filters-content .row .all .single-menu .portfolio-item3 {
+  bottom: 35vh;
+  left: 15vh;
+}
+.filters-container .filters-content .row .all .single-menu .foto img {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  max-height: 150px;
+  cursor: pointer;
+}
+.filters-container .filters-content .row .all .single-menu .foto div {
+  background: #ffffff;
+  display: inline-block;
+  margin: 0 auto 5% auto;
+  padding: 10px 10px 5px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s linear;
+  z-index: 0;
+  position: relative;
+}
+.filters-container .filters-content .row .all .single-menu .foto div:after {
+  color: #333;
+  font-size: 25px;
+  content: attr(title);
+  position: relative;
+  top: 15px;
+}
+.filters-container .filters-content .row .all .single-menu .foto div:hover {
+  transform: scale(1.01);
+  z-index: 10;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+.filters-container .filters-content .row .all .single-menu .project-title-settings {
+  margin-top: 5%;
+  font: 18px/24px "opensans-bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: black;
+  text-align: center;
+}
+.filters-container .filters-content .row .all .single-menu .project-date {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 8px 15px 2px 15px;
+  position: relative;
+  z-index: -500;
+  border-top: 5px solid #696969;
+  border-radius: 0 0 5px 5px;
+  background-color: #696969;
+  color: white;
 }
 
 .content-userguides .contactus-content-item {
