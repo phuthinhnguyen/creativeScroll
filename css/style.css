@@ -258,10 +258,100 @@ nav .nav-wrap .right img {
   color: #cdc6c3;
 }
 
-.content-left-item p, .content-right-item p {
+.home .container-1 {
+  line-height: 1.75;
+  font-size: calc(var(--index) * 0.75);
+  font-family: "Mali";
+  font-weight: 400;
+  color: rgb(228, 227, 227);
+  display: grid;
+  place-items: center;
+  width: 450px;
+  font-size: 25px;
+  position: absolute;
+  left: 120vh;
+  top: 30vh;
+}
+.home .container-1 .typed {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 1.5s steps(50, end) forwards, blinking 1s infinite, backspace 1.5s steps(50, end) 3s forwards;
+}
+.home .container-2 {
+  line-height: 1.75;
+  font-size: calc(var(--index) * 0.75);
+  font-family: "Mali";
+  font-weight: 400;
+  color: rgb(228, 227, 227);
+  display: grid;
+  place-items: center;
+  width: 450px;
+  font-size: 25px;
+  position: absolute;
+  left: 120vh;
+  top: 30vh;
+}
+.home .container-2 .typed {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 1.5s steps(50, end) 5s forwards, blinking 1s infinite, backspace 1.5s steps(50, end) 8s forwards;
+}
+.home .container-3 {
+  line-height: 1.75;
+  font-size: calc(var(--index) * 0.75);
+  font-family: "Mali";
+  font-weight: 400;
+  color: rgb(228, 227, 227);
+  display: grid;
+  place-items: center;
+  width: 450px;
+  font-size: 25px;
+  position: absolute;
+  left: 120vh;
+  top: 30vh;
+}
+.home .container-3 .typed {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 1.5s steps(50, end) 10s forwards, blinking 1s infinite, backspace 1.5s steps(50, end) 13s forwards;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blinking {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+@keyframes backspace {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+.content-left-item p,
+.content-right-item p {
   margin-bottom: 50px;
 }
-.content-left-item img, .content-right-item img {
+.content-left-item img,
+.content-right-item img {
   width: 100%;
   height: auto;
   margin-bottom: 50px;
