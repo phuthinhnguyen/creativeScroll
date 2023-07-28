@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMARTCARD</title>
+  </head>
+  <body>
+    <div class="generate-cardid">
+      <h2>GENERATE-CARDID</h2>
+      <p id="cardid">123456789</p>
+      <button onclick="generate()">Create</button>
+      <button onclick="addtoDatabase()">Add to Database</button>
+    </div>
+    <script>
+      function generate() {
+        let min = 100000000;
+        let max = 999999999;
+        let cardid = Math.floor(Math.random() * (max - min) + min);
+        let showcardid = document.getElementById("cardid");
+        showcardid.innerHTML = cardid;
+      }
+      function addtoDatabase() {
+        fetch("/admin", {
+          method: "POST",
+          body: JSON.stringify({ id: cardid }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+          .then(function (response) {
+            if (response.ok) {
+              console.log("Add to Database successfully");
+              return;
+            }
+            throw new Error("Request failed.");
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      }
+    </script>
+  </body>
+</html>
