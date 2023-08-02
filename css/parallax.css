@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Calibri";
+  src: url("fonts/calibri/calibri-regular.ttf");
+}
+.layers__caption {
+  font-family: "Mali";
+}
+
+.layers__title {
+  font-family: "Mali";
+}
+
+.main-article__content .nav-responsive {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
+  padding: 10px 50px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  border: 1px solid white;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+.main-article__content .nav-responsive .left i {
+  font-size: 20p;
+}
+.main-article__content .nav-responsive .center img {
+  width: 100px;
+  height: 40px;
+}

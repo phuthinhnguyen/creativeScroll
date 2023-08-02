@@ -1,0 +1,59 @@
+@import "variable";
+@import "font";
+@import "mixin";
+
+
+.layers__caption{
+    font-family: $fontMali;
+}
+.layers__title{
+    font-family: $fontMali;
+}
+.main-article__content{
+    .nav-responsive{
+        display: flex;
+        justify-content: space-between;
+        align-items:center ;
+        width: 100vw;
+        height: 50px;
+        padding: 10px 50px;
+        column-gap: 40px;
+        border: 1px solid white;
+        position: absolute;
+        top: 20px;
+        left: 0;
+        .left{
+            i{
+                font-size: 20p;
+            }
+        }
+        .center{
+            img{
+                width: 100px;
+                height: 40px;
+            }
+        }
+    }
+}
+@media screen and (min-width:1368px) {
+    // .nav-responsie{
+    //     display: none;
+    // }
+    // #wrapper-responsive{
+    //     display: none;
+    // }
+    // #wrapper{
+    //     display: block;
+    // }
+}
+@media screen and (max-width:1367px) {
+    // .nav-responsie{
+    //     display: block;
+    // }
+    // #wrapper-responsive{
+    //     display: block;
+    // }
+    // #wrapper{
+    //     display: none;
+    // }
+}
