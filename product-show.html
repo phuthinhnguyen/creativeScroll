@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.4.js"></script>
 </head>
 
 <body>
@@ -22,33 +23,28 @@
     <div class="item1-show" id="item1-show">
         <div class="item1-show-wrap">
             <div class="item1-show-left">
-                <div class="left-slide-wrap">
-                    <div class="left-slide-item">
-                        <img src="../img/home-12-front.png" alt="" class="left-slide-img">
+            
+                    <div class="item1-show-left-item">
+                        <img src="/img/home-12-front.png" alt="" class="left-slide-img" id="left-show-img" width="200" height="200">
                     </div>
-                    <div class="left-slide-item">
-                        <img src="../img/home-12-back.png" alt="" class="left-slide-img">
-                    </div>
-                </div>
-                <a id="left-slide-wrap-up"><i class="fa fa-arrow-up"></i></a>
-                <a id="left-slide-wrap-down"><i class="fa fa-arrow-down"></i></a>
+                    <!-- <div class="item1-show-left-item">
+                        <img src="img/home-12-back.png" alt="" class="left-slide-img"  id="left-show-img-back" width="200" height="200">
+                    </div> -->
+        
+            
             </div>
-            <div class="left-show">
-                <div>
-                    <img src="../img/home-12-front.png" alt="" id="left-show-img" width="300" height="240">
-                </div>
-                <a id="left-show-arrowleft"><i class="fa fa-arrow-left"></i></a>
-                <a id="left-show-arrowright"><i class="fa fa-arrow-right"></i></a>
-            </div>
+       
             <div class="item1-show-right">
                 <h2>PRODUCT NAME</h2>
                 <p>PRODUCT DESCRIPTION</p>
             </div>
 
-            <span class="close">×</span>
+           
         </div>
+        <span class="close">×</span>
+        <div id="myresult" class="img-zoom-result"></div>
     </div>
-    <div id="myresult" class="img-zoom-result"></div>
+    
     <script>
         let item1 = document.getElementById("portfolio-item1")
         let item1show = document.getElementById("item1-show")
@@ -74,7 +70,7 @@
             cx = result.offsetWidth / lens.offsetWidth;
             cy = result.offsetHeight / lens.offsetHeight;
             /* Set background properties for the result DIV */
-            result.style.backgroundImage = "url('" + leftshowimg.src + "')";
+            result.style.backgroundImage = "url('" + img.src + "')";
             result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
             /* Execute a function when someone moves the cursor over the image, or the lens: */
             lens.addEventListener("mousemove", moveLens);
@@ -118,7 +114,7 @@
         }
         $("#myresult").hide();
         if ($(window).width() > 992) {
-            $(".left-show").hover(function name(params) {
+            $(".item1-show-left-item").hover(function name(params) {
                 $(".img-zoom-lens").hide();
                 $("#myresult").fadeToggle();
                 imageZoom("left-show-img", "myresult");
