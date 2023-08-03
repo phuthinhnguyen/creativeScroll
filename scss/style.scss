@@ -648,9 +648,167 @@ nav {
                     }
                 }
             }
+          
         }
     }
 }
+.item1-show{
+    // position: relative;
+    // width: 800px;
+    // height: 800px;
+    // background-color: black;
+    // border: 1px solid white;
+    // display: none;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+
+    .close{
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+        &:hover,&:focus{
+            color: rgb(255, 0, 0);
+            cursor: pointer;
+        }
+    }
+    .item1-show-wrap{
+        // width: 50%;
+        // height: 50%;
+        // max-width: 700px;
+        // transform: translate(-50%,-50%);
+        // h2{
+        //     color: black;
+        // }
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 50vh;
+        height: 60vh;
+        color: white;
+        border: 1px solid white;
+        text-align: center;
+        .item1-show-left{
+            .left-slide-wrap{
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                overflow: hidden;
+                height: 600px;
+                width: 100%;
+                padding-top: 10px;
+                div{
+                    transition: .4s;
+                    width: 90%;
+                    height: 90%;
+                    margin: auto;
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                    &:hover,&:focus{
+                        cursor: pointer;
+                        outline: 1px solid black;
+                        border: 5px solid white;
+                    }
+                }
+            }
+            a{
+                position: absolute;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: white;
+                left: 50%;
+                transform: translate(-50%,0);
+                text-align: center;
+                line-height: 30px;
+                border: 1px solid lightgray;
+                transition: .7s;
+                opacity: 0;
+                &:first-of-type{
+                    top: 0;
+                }
+                &:last-of-type{
+                    bottom: 0;
+                }
+                &:hover{
+                    background-color: black;
+                    color: white;
+                    cursor: pointer;
+                }
+                i{
+                    font-size: 14px;
+                }
+            }
+            &:hover a{
+                opacity: 1;
+            }
+                .left-slide-item{
+                    img{
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+            .left-show{
+                position: relative;
+                &:hover a{
+                    opacity: 1;
+                }
+                div{
+                    img{
+                        width: 100%;
+                        height: 600px;
+                        min-height: 500px;
+                    }
+                }
+                a{
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background-color: white;
+                    top: 40%;
+                    opacity: 0;
+                    transition: .7s;
+                    z-index: 2;
+                    text-align: center;
+                    line-height: 50px;
+                    border: 1px solid lightgray;
+                    &:first-of-type{
+                        left: 10px;
+                    }
+                    &:last-of-type{
+                        right: 10px;
+                    }
+                    &:hover{
+                        background-color: black;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    
+        
+    }
 
 // CSS userguides
 .content-userguides {

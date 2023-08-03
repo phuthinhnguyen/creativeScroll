@@ -1,0 +1,31 @@
+@import "variable";
+@import "font";
+@import "mixin";
+
+body{
+    background-color: black;
+}
+.generate-cardid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width: 100%;
+    padding-top: 50px;
+    flex-direction: column;
+    row-gap: 50px;
+    h2{
+        font-family: $fontAdamGorry;
+        font-weight: 900;
+        font-size: 25px;
+        @include title;
+
+    }
+    #cardid{
+        @include text;
+    }
+    button{
+        @include button;
+        border: 1px solid white;
+    }
+}
