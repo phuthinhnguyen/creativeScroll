@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/jquery-3.6.4.js"></script>
+    <link rel="stylesheet" href="/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -20,26 +21,31 @@
     </span>
 
     <!-- show product when user click on product item -->
+    <img style="visibility: hidden;" src="/img/home-12-front.png" alt="" class="left-slide-img" >
+    <img style="visibility: hidden;" src="/img/home-12-back.png" alt="" class="left-slide-img" >
     <div class="item1-show" id="item1-show">
         <div class="item1-show-wrap">
             <div class="item1-show-left">
-            
-                    <div class="item1-show-left-item">
-                        <img src="/img/home-12-front.png" alt="" class="left-slide-img" id="left-show-img" width="200" height="200">
-                    </div>
-                    <!-- <div class="item1-show-left-item">
-                        <img src="img/home-12-back.png" alt="" class="left-slide-img"  id="left-show-img-back" width="200" height="200">
-                    </div> -->
-        
-            
+                <div class="item1-show-left-item">
+                    <img src="/img/home-12-front.png" alt="" id="left-show-img" width="200" height="200">
+                </div>
+                <a id="left-show-arrowleft"><i class="fa fa-angle-left"></i></a>
+                <a id="left-show-arrowright"><i class="fa fa-angle-right"></i></a>
             </div>
-       
             <div class="item1-show-right">
                 <h2>PRODUCT NAME</h2>
-                <p>PRODUCT DESCRIPTION</p>
+                <div class="product-detail">
+                    PRODUCT DETAIL
+                    <p>Chip: Ntag215</p>
+                    <p>Dung lượng ghi: 504 byte</p>
+                    <p>Khoảng cách hoạt động: 1 đến 5cm</p>
+                    <p>Số lần xóa: >100000 lần</p>
+                    <p>Lưu trữ dữ liệu: >10 năm</p>
+                    <p>Thời gian đọc: 100000 lần</p>
+                    <p>Đường kính: 25mm</p>
+                    <p>Chất liệu: PVC</p>
+                </div>
             </div>
-
-           
         </div>
         <span class="close">×</span>
         <div id="myresult" class="img-zoom-result"></div>
@@ -49,12 +55,41 @@
         let item1 = document.getElementById("portfolio-item1")
         let item1show = document.getElementById("item1-show")
         let leftshowimg = document.querySelector("#left-show-img");
+        let array = document.querySelectorAll(".left-slide-img")
+        let arrayindex = 0
+ 
         item1.addEventListener("click", function () {
             item1show.style.display = "block";
         })
         document.querySelector(".close").addEventListener("click", () => {
             item1show.style.display = "none";
         });
+
+        //  funtion arrowleft and arrowright click
+		let arrowright = document.getElementById("left-show-arrowright");
+		arrowright.addEventListener("click",function name(params) {
+			if (arrayindex<array.length-1){
+				arrayindex++;
+			}
+			else {
+				arrayindex=array.length-1;
+			}
+			leftshowimg.src=array[arrayindex].src;
+		
+           
+		})
+		let arrowleft = document.getElementById("left-show-arrowleft");
+		arrowleft.addEventListener("click",function name(params) {
+			if (arrayindex>0){
+				arrayindex--;
+			}
+			else {
+				arrayindex=0;
+			}
+			leftshowimg.src=array[arrayindex].src;
+    
+		})
+
 
         // function to show zoom image
         function imageZoom(imgID, resultID) {
@@ -70,7 +105,7 @@
             cx = result.offsetWidth / lens.offsetWidth;
             cy = result.offsetHeight / lens.offsetHeight;
             /* Set background properties for the result DIV */
-            result.style.backgroundImage = "url('" + img.src + "')";
+            result.style.backgroundImage = "url('" + leftshowimg.src + "')";
             result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
             /* Execute a function when someone moves the cursor over the image, or the lens: */
             lens.addEventListener("mousemove", moveLens);

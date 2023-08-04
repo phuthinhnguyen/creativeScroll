@@ -532,6 +532,7 @@ nav .nav-wrap .right img {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.9);
+  padding-top: 50px;
 }
 .item1-show .close {
   position: absolute;
@@ -557,6 +558,7 @@ nav .nav-wrap .right img {
   color: white;
   border: 1px solid white;
   text-align: center;
+  background-image: url("/img/bg-01.jpg");
 }
 .item1-show .item1-show-wrap .item1-show-left {
   width: 50%;
@@ -564,8 +566,8 @@ nav .nav-wrap .right img {
   position: relative;
 }
 .item1-show .item1-show-wrap .item1-show-left .item1-show-left-item img {
-  width: 100%;
-  height: auto;
+  width: 300px;
+  height: 300px;
 }
 .item1-show .item1-show-wrap .item1-show-left .item1-show-left-item .img-zoom-lens {
   position: absolute;
@@ -573,15 +575,60 @@ nav .nav-wrap .right img {
   width: 70px;
   height: 70px;
 }
+.item1-show .item1-show-wrap .item1-show-left a {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  top: 40%;
+  opacity: 1;
+  transition: 0.7s;
+  z-index: 100;
+  text-align: center;
+  line-height: 50px;
+  transition: 0.6s;
+}
+.item1-show .item1-show-wrap .item1-show-left a:first-of-type {
+  left: 10px;
+}
+.item1-show .item1-show-wrap .item1-show-left a:last-of-type {
+  right: 10px;
+}
+.item1-show .item1-show-wrap .item1-show-left a:hover {
+  background-color: black;
+  cursor: pointer;
+}
+.item1-show .item1-show-wrap .item1-show-left a:hover i {
+  color: white;
+}
+.item1-show .item1-show-wrap .item1-show-left a i {
+  transition: 0.6s;
+  color: black;
+}
 .item1-show .item1-show-wrap .item1-show-right {
   width: 50%;
+}
+.item1-show .item1-show-wrap .item1-show-right h2 {
+  font-family: "AdamGorry";
+}
+.item1-show .item1-show-wrap .item1-show-right .product-detail {
+  font-family: "AdamGorry";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item1-show .item1-show-wrap .item1-show-right .product-detail p {
+  font-family: "Mali";
+  text-align: left;
 }
 .item1-show .img-zoom-result {
   width: 400px;
   height: 400px;
   position: absolute;
-  top: 80px;
-  right: 30px;
+  top: 250px;
+  left: 50%;
   border: 1px solid white;
 }
 
